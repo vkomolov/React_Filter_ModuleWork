@@ -9,8 +9,7 @@ import App from './containers/App';
 import { sdkArr } from './utils/initialData';
 
 ///styles
-import './utils/global_styles/index.css';
-import './utils/global_styles/reset.css';
+import './utils/global_styles/index.scss';
 
 /**@return React Element, which comprises the Header and the Footer components
  * inside of TopTemplate and the child App

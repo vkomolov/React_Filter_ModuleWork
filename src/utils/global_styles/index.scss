@@ -1,9 +1,8 @@
-@font-face {
-  font-family: "Georgia";
-  src: url("../../assets/fonts/Georgia.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
+@import "fonts";
+@import "variables";
+@import "reset";
+
+///////STYLES///////
 
 body {
   font-family: "Georgia", sans-serif;
@@ -25,12 +24,3 @@ body:before {
   box-shadow: 0 0 10px rgba(0,0,0,.8);
 }
 /*****************END TOP BORDER BODY************/
-
-#root {
-  max-width: 1280px;
-  background-color: white;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-
