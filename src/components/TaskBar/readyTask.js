@@ -17,22 +17,22 @@ export const readyTask = ( data={} ) => {
     let obj2Arr = [];
     if (data && Object.keys(data).length) {
         obj2Arr = Object.keys(data).map((key, index) => {
-
+            let outObj = {};
             if ( typeof(data[key]) === "string") {
                 if (key === "heading") {
-                    return (
+                    outObj = (
                         <h3 className={styles.heading} key={index}>
                             { data[key] }
                         </h3>
                     );
                 }
-                return (
+                outObj = (
                     <p className={styles.textBlock} key={index}>
-                        { data[key] }
+                    { data[key] }
                     </p>
                 );
             }
-            else if (Array.isArray(data[key])) {
+            if ( Array.isArray(data[key]) ) {
                 const list = data[key].map((i, index) =>
                     <li key={index} className={styles.listItem}>{i}</li>
                 );
@@ -40,12 +40,14 @@ export const readyTask = ( data={} ) => {
                     ? `${styles.list} ${styles.spec}`
                     : styles.list;
 
-                return (
+                outObj = (
                     <ul className={ spec } key={index}>
                         { list }
                     </ul>
                 );
             }
+
+            return outObj;
         });
         return obj2Arr;
     }

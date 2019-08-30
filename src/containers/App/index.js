@@ -9,11 +9,11 @@ import filterData from '../../components/ContentList/filterData';
 ///styles
 import styles from './App.scss';
 
-/**@description statefull, it contains the state which is sent to the child Components:
+/**@description statefull, it contains the state which is sent to the child components:
  * - FilterBar, which is rendered through renderFilters {func};
  * - ContentList, which is rendered through filterData {func};
  * @reactProps {array} sdkArr; Array of SDK objects
- * @return {object} JSX object with the functions which render Components:
+ * @return {object} JSX object with the functions which render components:
  * - renderFilters(): FilterBar (column of all filters which are generated
  * from the initial data)
  *

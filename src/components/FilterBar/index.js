@@ -16,7 +16,7 @@ import styles from './FilterBar.scss';
  * @reactProps {array}: data.tags; array of unique tags
  * @reactProps {string}: filter; value of the filter
  * @reactProps {func}: setFilter; method to change the Parent state.filter
- * @return JSX object with Components: 'SearchInput', array of 'RadioBlock's
+ * @return JSX object with components: 'SearchInput', array of 'RadioBlock's
  * */
 const FilterBar = ({ data:{ tags=[], filter, setFilter } }) => {
 
